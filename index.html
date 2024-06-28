@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="titulo"><h1>Jogo da Velha</h1></section>
+
+    <section>
+        <div class="container">
+            <div class="player-info">
+                <label>Jogador 1: </label>
+                <input type="text" id="inputJogador1" placeholder="Insira o nome do Jogador 1">
+            </div>
+            <div class="player-info">
+                <label>Jogador 2: </label>
+                <input type="text" id="inputJogador2" placeholder="Insira o nome do Jogador 2">
+            </div>
+            <button id="jogadorMaquina" class="btn">Jogar contra Máquina</button>
+        </div>
+    </section>
+
+    <section id="partida">
+        <div>
+            <span id="jogador1"></span><h3>✖</h3>
+            <br>
+            <span id="jogador2"></span><h3>⚪</h3>
+        </div>
+    </section>
+
+    <section>
+        <div class="board">
+            <div class="quadrado" data-quadrado="0"></div>
+            <div class="quadrado" data-quadrado="1"></div>
+            <div class="quadrado" data-quadrado="2"></div>
+            <div class="quadrado" data-quadrado="3"></div>
+            <div class="quadrado" data-quadrado="4"></div>
+            <div class="quadrado" data-quadrado="5"></div>
+            <div class="quadrado" data-quadrado="6"></div>
+            <div class="quadrado" data-quadrado="7"></div>
+            <div class="quadrado" data-quadrado="8"></div>
+        </div>
+        <button id="limpar" class="btn">Limpar</button>
+        <div id="resultado" class="result"></div>
+        <div id="linha"></div>
+    </section>
+
+    <section>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>Vitórias</th>
+                        <th>Derrotas</th>
+                    </tr>
+                </thead>
+                <tbody id="placar-jogadores">
+                    <tr>
+                        <td id="nomeJogador1">Jogador 1</td>
+                        <td id="pontuacaoJog1">0</td>
+                        <td id="derrotaJog1">0</td>
+                    </tr>
+                    <tr>
+                        <td id="nomeJogador2">Jogador 2</td>
+                        <td id="pontuacaoJog2">0</td>
+                        <td id="derrotaJog2">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

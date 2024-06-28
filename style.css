@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: "Playwrite NZ", cursive;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #35012c;
+}
+
+.titulo{
+  text-decoration: underline;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2%;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px #4f0147;
+  width: 70%;
+  background-color: #4f0147;
+}
+
+section{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #4f0147;
+    width: 30em;
+    background-color: #4f0147;
+}
+
+.container {
+    text-align: center;
+}
+.player-info {
+    margin: 1.2em;
+}
+.player-info label{
+  text-decoration: underline;
+}
+.imput{
+  margin-left: 1em;
+  width: 50%;
+  padding: 0.5em;
+  border: 2px solid #11001c;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 0 10px #4f0147;
+}
+
+.btn {
+  margin-top: 0.5em;
+  margin-left: 40%;
+  width: 30%;
+  padding: 0.5em;
+  border: 2px solid #11001c;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #3a015c;
+  color: #11001c;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #11001c;
+  color: #fff;
+}
+
+#partida{
+  position: fixed;
+  right: 0%;
+  width: 10em;
+  top: 7%;
+  font-size: 1em;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  #partida {
+    position: fixed;
+    right: 10%;
+    width: 10em;
+    top: 7%;
+    font-size: 0.6em;
+    text-align: center;
+  }
+}
+
+
+.board {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1em;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #35012C;
+    border: 2px solid #6d035b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.quadrado:hover {
+    background-color: #130c0c;
+}
+
+.result {
+    text-align: center;
+    margin: 2em 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+table {
+  width: 100%;
+  left: 50%;
+  border: 1px solid black;
+  box-shadow: 0 0 10px #11001c;
+  background-color: #4f0147;
+}
+
+th, td {
+  border-right: 1px solid black;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+th {
+  padding: 3px;
+  border-bottom: 1px solid black
+}
